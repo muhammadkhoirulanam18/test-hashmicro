@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+.hero {
+  height: 60vh;
+  background: url('../asset/Images/banner.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+}
+
+/* Social media */
+.logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
+/* Sticky navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 15px;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+/* card grid  */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 15px;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+/* card overlay  */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 20px;
+  
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* Hover effect */
+
+  .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 20px;
+  
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* Responsive  */
+@media(max-width: 768px){
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    height: 40vh;
+  }
+}
